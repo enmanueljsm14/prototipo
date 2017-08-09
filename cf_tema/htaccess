@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+RewriteBase /sitio/administrativo/
+
+RewriteRule ^([a-zA-Z0-9]+)/([a-zA-Z0-9]+)$ inicio.php?directory=$1&archive=$2
+
+</IfModule>
